@@ -1,6 +1,3 @@
-# learning asdfasdf
+# Learning Javascript with Xristos
 
 # Hello World
-
-adsfasdfasdfsdfsdf
-asdfasf
