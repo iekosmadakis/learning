@@ -121,4 +121,33 @@ console.log(arrayWith4);
 console.log(arrayWith6);
 
 
-// slice, splice etc.
+// Να δω μόνος μου slice, splice etc!!!!!!!!!!!!
+
+//slice() returns selected elements in an array, as a new array.
+//slice() selects from a given start, up to a (not inclusive) given end.
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);
+
+console.log(citrus);
+
+
+const whereTheMoneyGo = fruits.slice(-2, -1);
+
+console.log(whereTheMoneyGo);
+
+
+//splice() adds and/or removes array elements.
+const fruits2 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+fruits2.splice(2, 1, "Xristos", "Kiwi"); //remove Lemon and add Xristos & Kiwi there
+
+console.log(fruits2);
+
+const fruits3 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+fruits3.splice(2, "Xristos", "Kiwi"); //add Xristos & Kiwi in position 2
+
+console.log(fruits3);
+
+
+//includes() returns true if an array contains a specified value.
+//includes() is case sensitive.
+console.log(fruits3.includes("Banana", 3)); //start searching from position 3
