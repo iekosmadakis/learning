@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TIC TAC TOE</title>
-        <style>
-            .row {
-                display: flex
-            }
-            .square {
-                border: 1px solid black;
-                width: 200px;
-                height: 200px;
-                max-width: 25vw;
-                max-height: 25vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="game">
-            Xristos
-        </div>
-        <script src="./exercise5.js"></script>
-    </body>
+
+<head>
+    <title>TIC TAC TOE</title>
+    <script src="./exercise6.js"></script>
+    <style>
+        /* Browser tags */
+        body {
+            margin: 0;
+        }
+
+        /* Elements id */
+        #root {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Class name */
+        .board {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row {
+            display: flex;
+            border-right: 1px solid black;
+        }
+
+        .row:last-of-type {
+            border-bottom: 1px solid black;
+        }
+
+        .square {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            max-width: 25vw;
+            max-height: 25vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: none;
+            border-bottom: none;
+            cursor: not-allowed;
+        }
+
+        .square:empty {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+</body>
+
 </html>
